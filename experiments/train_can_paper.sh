@@ -1,11 +1,11 @@
-# export CUDA_VISIBLE_DEVICES=0 # edit this if you want to limit yourself to GPU
+export CUDA_VISIBLE_DEVICES='0' # edit this if you want to limit yourself to GPU
 export PYTHONPATH="slim/:$PYTHONPATH"
 python3 main.py \
---epoch 25 \
+--epoch 100 \
 --learning_rate .0001 \
 --beta 0.5 \
---batch_size 16 \
---sample_size 16 \
+--batch_size 32 \
+--sample_size 32 \
 --input_height 256 \
 --output_height 256 \
 --lambda_val 1.0 \
