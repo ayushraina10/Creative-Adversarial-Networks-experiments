@@ -1,0 +1,2 @@
+export CUDA_VISIBLE_DEVICES='0,1' # edit this if you want to limit yourself to GPU
+python3 main.py --dataset wikiart --dataroot ~/Pytorch_experiments/datasets/wikiart/ --outf can_wikiart_chkpt_100_epochs_weighted --cuda --ngpu 2 --lamb 1 --batchSize 1024 --niter 100 --lr 0.0002 --n_class 27 #--netG ./can_wikiart_chkpt_100_epochs_weighted/netG_epoch_16.pth --netD ./can_wikiart_chkpt_100_epochs_weighted/netD_epoch_16.pth
